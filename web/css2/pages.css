@@ -1,0 +1,265 @@
+/* Общие стили */
+:root {
+    --color-acc1: #0559a5;
+    --color-acc2: #ee7e1c;    
+}
+* {
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+button, input {
+    outline: none;
+}
+button, input[type='submit'], a, i, .btn {
+    cursor: pointer;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+/* Для скриптов */
+#scroll_btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+    z-index: 999;
+    display:none;
+}
+#scroll_btn i {
+    padding: 12px 16px;
+    background-color: #000;
+    font-size: 24px;
+    color: #fff;
+}
+.on {
+    display: block;
+}
+.on-flex {
+    display: block;
+}
+.off {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    transition: all ease .5s;
+    color: #fff;
+    background-color: #000;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.header-logo span {
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;    
+    color: #fff;
+}
+.header-nav ul {
+    display: flex;
+}
+.header-nav ul li {
+    margin: 0 10px;
+}
+.header-nav ul li a {
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+}
+.header-phone {
+    text-align: center;
+}
+.header-phone__top {
+    margin-bottom: 4px;  
+}
+.header-phone__top a {
+    color: #fff;
+    text-decoration: none;
+}
+.header-phone__bottom span {
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    border-radius: 3px;
+    display: block;
+    /* background-color: var(--color-acc1); */
+    cursor: pointer;
+    transition: all ease .5s;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+}
+.header-phone__bottom span:hover {
+    background-color: var(--color-acc1);
+}
+
+
+
+
+
+
+
+
+
+
+
+.breadcrumbs {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: #dcdcdc;
+    padding-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+
+.page {
+    padding: 80px 0;
+}
+.page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.page p {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    padding: 80px 0;
+    background-color: #000;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #292929;
+    padding-bottom: 40px;
+}
+.footer-top__item {
+    width: 20%;
+}
+.footer-top__item p {
+    color: #8c8c8c;
+}
+.footer-top__item h6, .footer-bottom__item h6 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 100;
+}
+.footer-top__item li {
+    margin-bottom: 10px;
+}
+.footer-top__item li a {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #292929;
+}
+.footer-bottom__item {
+    width: 30%;
+    color: #e2e2e2;
+}
+.footer-bottom__item p {
+    color: #8c8c8c;
+    margin-bottom: 15px;
+}
+.footer-bottom__item input {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #757575;
+    height: 40px;
+    padding-left: 10px;
+}
+.footer-bottom__item button {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #757575;
+    border-left: navajowhite;
+    height: 40px;
+    width: 40px;
+    margin-left: -4px;
+}
+.footer-bottom__item:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-bottom__item:nth-of-type(2) img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+.footer-bottom__item:nth-of-type(2) span {
+    color: #8c8c8c;
+}
+.footer-bottom-bottom {
+    color: #8c8c8c;
+    padding-top: 20px;
+}
